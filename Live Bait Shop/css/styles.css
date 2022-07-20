@@ -1,0 +1,236 @@
+/*
+    Name: Cara Jones
+    Date: July 18, 2022
+    Assignment: Live Bait Shop
+    File: styles.css
+*/
+
+:root{
+  --purp: #97a1b2;
+  --main: #3c8494;
+  --light: #989c8c;
+  --dark: #0d1222;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+html{
+  background-color: var(--dark);
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+body{
+  background-color: white;
+  margin: 10px 60px;
+}
+.wrapper{
+  display: grid;
+  grid-gap: 20px;
+}
+/*----------------------- header -------------------------*/
+header{
+  margin-bottom: 5px;
+}
+h1{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--dark);
+  text-shadow: var(--shadow);
+}
+header img{
+  width: 60%;
+  margin-left: 20%;
+  border: 1px solid var(--main);
+  box-shadow: var(--shadow);
+  border-radius: 3%;
+  margin-top: 20px;
+
+}
+/*-------------------------- navigation ---------------------*/
+
+.top-nav ul{
+  display: grid;
+  grid-gap: 10px;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 20px;
+}
+.top-nav a{
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: .5rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border: .9px solid var(--main);
+  box-shadow: var(--shadow);
+}
+.top-nav a:hover{
+  background: var(--dark);
+  color: var(--light);
+}
+
+.main-body{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+  'offerings livebait'
+  'offerings respooling '
+  'gallery gallery';
+}
+.main-body img{
+  margin-top: 30px;
+  border-radius: 15%;
+  box-shadow: var(--shadow);
+  grid-area: img;
+  max-width: 100%;
+}
+.gallery h2{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 3em;
+}
+.offerings{
+  padding: 20px 40px 0px 40px;
+  background-color: var(--main);
+  color: var(--dark);
+  border-radius: 2%;
+  box-shadow: var(--shadow);
+  grid-area: offerings;
+  text-align: center;
+  margin:5%;
+}
+.offerings h2{
+  margin-top: 60px;
+}
+.offerings ul{
+  list-style: inside;
+  text-align: left;
+  font-size: 1.5em;
+}
+.livebait{
+  grid-area: livebait;
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+  'img'
+  'h2'
+  'p';
+  padding: 30px;
+
+}
+
+.livebait h2, .respool h2{
+  grid-area: h2;
+  font-size: 1.5em;
+}
+.livebait p, .respool p{
+  grid-area: p;
+  margin: 0px 20px 0px 20px;
+}
+.respool{
+  grid-area: respooling;
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+  'img'
+  'h2'
+  'p';
+  padding: 30px;
+}
+.respool img, .livebait img{
+  width: 60%;
+  grid-area: img;
+  border-radius: 15%;
+  box-shadow: var(--shadow);
+  grid-area: img;
+  margin-left: 20%;
+}
+
+.gallery{
+  margin: 8%;
+  grid-area:gallery;
+}
+.gallery img{
+  width: 220px;
+  box-shadow: var(--shadow);
+  margin: 10px;
+
+}
+
+.contact-page{
+  padding: 10px;
+  margin: 10px;
+}
+
+.contact-page h2{
+  text-align: left;
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+.contact-page p{
+  margin-right: 450px;
+}
+iframe{
+  float: right;
+}
+h3{
+  text-align: center;
+  font-weight: bolder;
+}
+.bait{
+  display: grid;
+  align-content: flex-start;
+  grid-gap: 20px;
+  padding: 10px;
+  grid-template-columns: 3, 1fr;
+  margin-left: 50px;
+
+
+}
+.bait div{
+  display: flex;
+  width: 260px;
+  flex-wrap: wrap;
+
+}
+.bait div ul li{
+  list-style-type: none;
+  font-weight: bold;
+  position: relative;
+
+}
+.bait div ul li div{
+  position: absolute;
+  left: 275px;
+  display: inline;
+  font-style: italic;
+  font-weight: lighter;
+}
+.fishes{
+  list-style-type: none;
+  font-weight: bolder;
+  margin-top: 7px;
+  margin-left: -50px;
+}
+section section{
+  text-align: right;
+  color: red;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+/*---------------------------- footer ---------------------- */
+footer{
+  clear:both;
+  position: sticky;
+  bottom: 0px;
+  background-color: var(--light);
+  color: white;
+  padding: 1.1px;
+}
+.footer{
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.3em;
+}
